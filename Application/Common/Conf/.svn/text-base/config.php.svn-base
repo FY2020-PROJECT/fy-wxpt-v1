@@ -1,0 +1,6 @@
+<?php
+return array(
+	//'配置项'=>'配置值'
+    'SUPER_URL'=>'http://uc.fyscu.com/superlogin',
+    'APP_ID'=>1009
+);
