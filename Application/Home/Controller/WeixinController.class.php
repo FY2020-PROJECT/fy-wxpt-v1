@@ -42,8 +42,10 @@ switch($type) {
 		case '一键报修':
 		//$sign=md5('u_can_u_up'.$w->getRevFrom(). 'xiaohua_is_baka' . intval(time()/300) .'dsgygb');
 		//$url=C('SUPER_URL').'?appid='.C('APP_ID').'&superid='.$w->getRevFrom().'&sign='.$sign;
-		$sign=encode(time());
-		$url='http://dev.fyscu.com/Home/Index/expire?weixin_key='.$w->getRevFrom().'&sign='.$sign;
+		// $sign=encode(time());
+		// $url='http://dev.fyscu.com/Home/Index/expire?weixin_key='.$w->getRevFrom().'&sign='.$sign;
+
+		$url = "http://r.fyscu.com";
 
 		$arr=array(
 			'0'=>array(
@@ -63,8 +65,9 @@ switch($type) {
 			
 		//break;
        	case '接单':
-			$sign=encode(time());
-			$url='http://dev.fyscu.com/Home/Index/expire?weixin_key='.$w->getRevFrom().'&sign='.$sign;
+			// $sign=encode(time());
+			// $url='http://dev.fyscu.com/Home/Index/expire?weixin_key='.$w->getRevFrom().'&sign='.$sign;
+		$url = "http://r.fyscu.com";
 
 			$arr=array(
 			'0'=>array(
@@ -97,8 +100,9 @@ switch($type) {
 		$w->news($arr)->reply();
 		break;
 		case '管理':
-			$sign=encode(time());
-			$url='http://dev.fyscu.com/Home/Index/expire?weixin_key='.$w->getRevFrom().'&sign='.$sign;
+			// $sign=encode(time());
+			// $url='http://dev.fyscu.com/Home/Index/expire?weixin_key='.$w->getRevFrom().'&sign='.$sign;
+		$url = "http://r.fyscu.com";
 
 			$arr=array(
 			'0'=>array(
