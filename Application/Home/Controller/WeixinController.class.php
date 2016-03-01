@@ -268,38 +268,38 @@ $w->news($arr)->reply();
 	case Wechat::MSGTYPE_EVENT:
 	$event=$w->getRevEvent();
             if($event['event']=='subscribe'){
-	$url='http://xxx.com/api?mark=else';
-		  $regex=curl($url);
-          switch ($regex->result->type) {
-        	case 0:
-        		$w->text($regex->result->text)->reply();
-        		break;
-        	case 1:
-        	$arr=array(
-			'0'=>array(
-				'Title'=>$regex->result->article->title,
-				'Description'=> $regex->result->article->description,
-				'PicUrl'=>$regex->result->article->picUrl,
-				'Url'=>$regex->result->article->url
-				)
+	// $url='http://xxx.com/api?mark=else';
+	// 	  $regex=curl($url);
+ //          switch ($regex->result->type) {
+ //        	case 0:
+ //        		$w->text($regex->result->text)->reply();
+ //        		break;
+ //        	case 1:
+ //        	$arr=array(
+	// 		'0'=>array(
+	// 			'Title'=>$regex->result->article->title,
+	// 			'Description'=> $regex->result->article->description,
+	// 			'PicUrl'=>$regex->result->article->picUrl,
+	// 			'Url'=>$regex->result->article->url
+	// 			)
 
 
-			);
-        	    $w->news($arr)->reply();
+	// 		);
+ //        	    $w->news($arr)->reply();
 
-        	    break;
-        	default:
-        		# code...
-        		break;
-        }
+ //        	    break;
+ //        	default:
+ //        		# code...
+ //        		break;
+ //        }
 
-            	/*$w->text("终于等到你。
+            	$w->text("终于等到你。
 坐。
 飞扬俱乐部所有工作人员将竭诚为您服务。有什么技术上的问题可以直接给微信君留言~
 回复:
 报修 (进入一键报修)
 绩点 (进入一键查看绩点/平均分)")->reply();
-*/
+
             }
 			break;
 	case Wechat::MSGTYPE_IMAGE:
