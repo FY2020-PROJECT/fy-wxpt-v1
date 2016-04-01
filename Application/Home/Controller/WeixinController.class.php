@@ -99,6 +99,11 @@ switch($type) {
 			);
 		$w->news($arr)->reply();
 		break;
+		case 'fly-young组合2':
+
+		case 'fly-young组合1':
+		$w->text('飞扬传媒祝您愚人节快乐~     随手转发  传播感动传递爱  蟹蟹！')->reply();
+		break;
 		case '管理':
 			// $sign=encode(time());
 			// $url='http://dev.fyscu.com/Home/Index/expire?weixin_key='.$w->getRevFrom().'&sign='.$sign;
